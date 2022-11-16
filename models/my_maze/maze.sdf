@@ -1,0 +1,25 @@
+<?xml version="1.0" ?>
+<sdf version="1.5">
+  <model name="my_maze_gsf">
+    <static>true</static>
+    <link name="maze_link">
+      <pose>3.2 0 0 0 0 0</pose>
+        <collision name="maze_collision">  
+         <geometry>
+            <mesh>
+              <uri>model://my_maze/meshes/maze.dae</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      
+      <visual name="maze_mesh">
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+            <mesh>
+                <uri>model://my_maze/meshes/maze.dae</uri>
+            </mesh>
+        </geometry>
+      </visual>
+    </link>
+  </model>
+</sdf>
